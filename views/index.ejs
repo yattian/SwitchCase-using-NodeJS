@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="https://js.stripe.com/v3/" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="#">?</a>
+      <div class="topnav-right">
+        <a href="./paymentSuccess.html"><button class="button">Test Page Successful</button></a>
+        <a href="#"
+          ><button class="button aSignin" onclick="googleSignin()">
+            Unfunctional button
+          </button></a
+        >
+      </div>
+    </div>
+
+    <h1>Custom mini switch game cases</h1>
+
+    <div class="content">
+      <p>
+        Everything is cuter when it's smaller... right? Now you can take your
+        favourite Switch games and shrink them into bite sized cases!
+      </p>
+
+      <div class="buttonPlacer">
+        <button
+          class="button"
+          onclick="document.getElementById('image_input').click()"
+        >
+          Upload Custom Image
+        </button>
+        <input
+          type="file"
+          id="image_input"
+          accept="image/png, image/jpg"
+          style="display: none"
+        />
+        <button class="button" onclick="showSpineGuide()">
+          Toggle Spine Area
+        </button>
+      </div>
+
+      <p>
+        Not sure what to upload? Check
+        <a
+          href="https://www.thecoverproject.net/view.php?cat_id=62"
+          target="_blank"
+          >The Cover Project</a
+        >
+        for insipiration!
+      </p>
+
+      <div id="display_image">
+        <div id="vll">
+          <div id="vlr"></div>
+        </div>
+      </div>
+
+      <div class="buttonPlacer divAddCart" data-item-id="<%= items.id %>">
+        <button class="button addCart">Add to Cart</button>
+      </div>
+
+      <hr />
+      <h1>Your Cart</h1>
+      <section class="cart"></section>
+
+      <hr />
+      <span class="totalPrice">Your Total is: $</span>
+
+      <div class="buttonPlacer">
+        <button class="button checkout">Checkout</button>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="coverCancel" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="coverCancelPara">Error!</p>
+        <button class="button closeButton">Close</button>
+      </div>
+    </div>
+
+    <!-- Google
+    <div id="googleSign" class="modal">
+      <div class="modal-content">
+        <button class="button closeSignin">Close</button>
+      </div>
+    </div>
+    -->
+
+    <div id="checkoutCover" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="checkoutPara">Proceed to checkout!</p>
+        <button class="button finalCheckout">Checkout</button>
+        <button class="button cancelButton">Cancel</button>
+      </div>
+    </div>
+
+    <!--
+    <div
+      id="g_id_onload"
+      data-client_id="767876851068-v7aj2bm5pgucp1a2sjca10tevv59uco9.apps.googleusercontent.com"
+      data-context="signin"
+      data-ux_mode="popup"
+      data-login_uri="http://localhost:3000/index"
+      data-itp_support="true"
+    ></div>
+
+
+    <div
+      class="g_id_signin"
+      data-type="standard"
+      data-shape="rectangular"
+      data-theme="outline"
+      data-text="signin_with"
+      data-size="large"
+      data-logo_alignment="left"
+    ></div>
+    -->
+  </body>
+</html>

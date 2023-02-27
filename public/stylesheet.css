@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;500&display=swap");
+/*https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #d90429;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  font-family: "Unbounded", cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.topnav-right button {
+  margin: 0;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
+
+#display_image {
+  /*width: 78.6 * 1vw;
+  height: 60.9 * 10vh;*/
+  width: 100%;
+  height: 0;
+  padding-bottom: 77%;
+  border: 1px solid black;
+  background-position: cover;
+  background-size: cover;
+  /*background: linear-gradient(#000, #000) no-repeat center/2px 100%;*/
+}
+
+#vll {
+  border-right: 3px solid black;
+  width: 47.5%;
+  height: 0;
+  padding-bottom: 77%;
+}
+/*edf2f4*/
+#vlr {
+  border-right: 3px solid black;
+  width: 109.5%;
+  height: 0;
+  padding-bottom: 162.3%;
+  position: relative;
+}
+
+body {
+  background-color: #edf2f4;
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ef233c;
+  font-family: "Unbounded", cursive;
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+  font-family: "Unbounded", cursive;
+  font-weight: 200;
+}
+
+.button {
+  background-color: #ef233c;
+  font-family: "Unbounded", cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 15px 15px 15px 15px;
+}
+
+.button-danger {
+  background-color: #ef233c;
+  font-family: "Unbounded", cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.button-danger:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.button:hover {
+  background-color: #d90429;
+  cursor: pointer;
+}
+
+.button-danger:hover {
+  background-color: #d90429;
+  cursor: pointer;
+}
+
+.buttonPlacer {
+  text-align: center;
+}
+
+.Cart-Items {
+  margin: auto;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  width: 20%;
+  text-align: center;
+}
+
+.image-box img {
+  object-fit: cover;
+  object-position: top left;
+  width: 270px;
+  height: 210px;
+}
+
+@media screen and (max-width: 815px) {
+  .image-box img {
+    width: 180px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .image-box img {
+    width: 135px;
+    height: 105px;
+  }
+}
+
+.counter {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  height: 100%;
+  text-align: right;
+  font-size: 26px;
+  font-family: "Unbounded", cursive;
+  font-weight: 200;
+  color: black;
+  flex-shrink: 3;
+}
+
+#spacer {
+  width: 30px;
+}
+
+@media screen and (max-width: 605px) {
+  #spacer {
+    width: 0px;
+  }
+}
+
+.total {
+  padding-left: 45vw;
+  font-size: 26px;
+  font-family: "Unbounded", cursive;
+  font-weight: 200;
+}
+
+.cart-quantity {
+  outline: none;
+  background-color: #edf2f4;
+  border-color: transparent;
+  border-bottom: 2px solid #d90429;
+  font-size: 26px;
+  font-family: "Unbounded", cursive;
+  font-weight: 200;
+  width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .cart-quantity {
+    width: 20px;
+  }
+}
+
+input:focus,
+input:active {
+  border-color: transparent;
+  border-bottom: 3px solid #ef233c;
+  background-color: #edf2f4;
+}
+
+.counter p {
+  font-size: 26px;
+  font-family: "Unbounded", cursive;
+  font-weight: 200;
+}
+
+.totalPrice {
+  font-size: 26px;
+  font-family: "Unbounded", cursive;
+  font-weight: 200;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  text-align: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #edf2f4;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid black;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content p {
+  font-weight: 500;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .cartText {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #qty {
+    font-size: 15px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.aSignin {
+  display: flex;
+}
